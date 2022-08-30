@@ -15,6 +15,8 @@ import {MatCardModule} from '@angular/material/card';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {MatIconModule} from "@angular/material/icon";
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -24,19 +26,21 @@ import {HttpClientModule} from "@angular/common/http";
     AboutComponent,
     NotFoundComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    DragDropModule,
-    FormsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCardModule,
+        DragDropModule,
+        FormsModule,
+        HttpClientModule,
+        MatIconModule,
+        MatSnackBarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
