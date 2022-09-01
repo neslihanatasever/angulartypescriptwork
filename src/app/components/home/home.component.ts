@@ -52,7 +52,13 @@ export class HomeComponent implements OnInit {
     }, err => {
       console.log(err);
     });
+
+
+    this.todoService.getAllTodo().subscribe(res => {
+      let x =  this.todoService;
+    });
   }
+
 
   updatetodo() {
     this.todoService.updatetodo(this.data).subscribe(res => {
